@@ -42,5 +42,24 @@
   git checkout master
 
 #pull
-  #pulls . (everything) from the master branch
-  git pull . master
+  #pulls . (everything) from the given branch
+  git pull . *BRANCH_NAME*
+
+#fetch
+  #works like pull but it does not make the changes in the current brach it just makes them ready
+  git fetch . master
+
+#diff - see changes
+  #see the changes between two branches
+  git diff *BRANCH_ONE_NAME* *BRANCH_TWO_NAME*
+
+  #only see the names of the files that differ between two branches
+  git diff *BRANCH_ONE_NAME* *BRANCH_TWO_NAME* --name-only
+
+  git diff *BRANCH_ONE_NAME* *BRANCH_TWO_NAME* --stat
+
+#delete branches
+  git branch -d *BRANCH_NAME*
+
+  #force delete the branch
+  git branch -D *BRANCH_NAME*
