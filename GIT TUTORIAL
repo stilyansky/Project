@@ -7,7 +7,7 @@
 #first you add the file
   git add *FILE_NAME*
 
-  #adds all files 
+  #adds all files
   git add .
 
 
@@ -40,3 +40,7 @@
 
   #enter a branch
   git checkout master
+
+#pull
+  #pulls . (everything) from the master branch
+  git pull . master
