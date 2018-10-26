@@ -1,0 +1,42 @@
+#edit the global settings
+  git config --global --edit
+
+#see the status
+  git status
+
+#first you add the file
+  git add *FILE_NAME*
+
+  #adds all files 
+  git add .
+
+
+#then you can commit it to git
+  #need to add a good discribtion message to the commit (think about how it will be viewed)
+    git commit -m "*MESSAGE*"
+  #after it has been commited you can ammend changes to the file
+    git commit -am "*MESSAGE*"
+
+
+#log the changes
+  git log
+
+  git log --stat
+  git log --decorate
+  git log --pretty
+  git log --pretty=oneline
+  git log --pretty=full
+  git log --pretty=fuller
+
+  git log --graph //!!!usefull
+
+
+#branches
+
+  git branch *BRANCH_NAME*
+
+  #create a new branch and enter in it right away
+  git branch -d *BRANCH_NAME*
+
+  #enter a branch
+  git checkout master
